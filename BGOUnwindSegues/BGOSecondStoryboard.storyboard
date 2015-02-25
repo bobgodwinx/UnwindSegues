@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Fourth View Controller-->
+        <scene sceneID="rhi-Ev-xcj">
+            <objects>
+                <viewController id="stu-Mv-2Lz" customClass="BGOFourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPI-q0-rMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="UJW-uc-omx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hvV-9c-KRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgv-JD-A4j">
+                                <rect key="frame" x="228" y="285" width="186" height="30"/>
+                                <state key="normal" title="Go to the other Storyboard">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oUi-Vi-bE7" kind="unwind" unwindAction="unwindToTheFirstView:" id="l6g-tJ-2S5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pge-XF-8M1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iM7-vq-hLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oUi-Vi-bE7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="388"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gfs-N3-kVI">
+            <objects>
+                <navigationController storyboardIdentifier="BGOSecondStoryboardNavigatorController" automaticallyAdjustsScrollViewInsets="NO" id="gvQ-8Q-Zo6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3wS-R3-sH3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="stu-Mv-2Lz" kind="relationship" relationship="rootViewController" id="YQO-ED-8rF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCm-lm-6E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="388"/>
+        </scene>
+    </scenes>
+</document>
